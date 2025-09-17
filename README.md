@@ -2,6 +2,10 @@
 
 This is a simple tax calculator built on vite + react
 
+I whipped up a quick host of the app on Vercel:
+
+https://nz-tax-calculator-ashen.vercel.app/
+
 ### Running the app (assuming you have node + npm installed)
 Clone the repo:
 
