@@ -23,6 +23,10 @@ Then to run the app:
 
 `npm run dev`
 
+Check out the app on the port it's running which is probably:
+
+http://localhost:5173
+
 To run the tests:
 
 `npm run test`
