@@ -8,6 +8,8 @@ const TAX_BRACKETS = [
 ]
 
 export default function calculateTax(income) {
+  if (income < 0) return 0; // Account for negative numbers
+
   let taxToPay = 0;
 
   for (let i = 0; i < TAX_BRACKETS.length; i++ ) {
