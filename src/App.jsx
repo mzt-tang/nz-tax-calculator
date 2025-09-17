@@ -10,7 +10,7 @@ function App() {
   }
 
   function handleTaxCalculation(incomeAmount) {
-    return calculateTax(incomeAmount)
+    return calculateTax(incomeAmount).toLocaleString("en-US", {style: "currency", currency: "NZD"});
   }
 
   return (
@@ -26,9 +26,9 @@ function App() {
         <h3>
           Your taxed amount is
         </h3>
-        </div>
+        <div className="tax-amount">
           {handleTaxCalculation(incomeAmount)}
-        <div>
+        </div>
       </div>
     </>
   )
