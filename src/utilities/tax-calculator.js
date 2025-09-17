@@ -25,6 +25,10 @@ export default function calculateTax(income) {
   return taxToPay;
 }
 
+export function incomeAfterTax(income, tax) {
+  return income - tax;
+}
+
 function calculateMaxBracketAmount(taxBracketIndex) {
   if (taxBracketIndex == 0) return 0; // Account for 0 income;
   const totalIncomeForBracket = TAX_BRACKETS[taxBracketIndex].bracket - TAX_BRACKETS[taxBracketIndex - 1].bracket;

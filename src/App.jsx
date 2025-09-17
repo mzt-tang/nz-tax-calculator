@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import calculateTax from './utilities/tax-calculator';
+import calculateTax, { incomeAfterTax } from './utilities/tax-calculator';
 
 function App() {
   const [incomeAmount, setIncomeAmount] = useState(0);
@@ -9,8 +9,12 @@ function App() {
     setIncomeAmount(e.target.value);
   }
 
-  function handleTaxCalculation(incomeAmount) {
-    return calculateTax(incomeAmount).toLocaleString("en-US", {style: "currency", currency: "NZD"});
+  function handleTaxCalculation(income) {
+    return calculateTax(income).toLocaleString("en-US", {style: "currency", currency: "NZD"});
+  }
+
+  function handleIncomeAfterTaxCalculation(income) {
+    return incomeAfterTax(income, calculateTax(income)).toLocaleString("en-US", {style: "currency", currency: "NZD"});
   }
 
   return (
@@ -26,8 +30,14 @@ function App() {
         <h3>
           Your taxed amount is
         </h3>
-        <div className="tax-amount">
+        <div className="display-amount">
           {handleTaxCalculation(incomeAmount)}
+        </div>
+        <h3>
+          Your income after tax is
+        </h3>
+        <div className="display-amount">
+          {handleIncomeAfterTaxCalculation(incomeAmount)}
         </div>
       </div>
     </>

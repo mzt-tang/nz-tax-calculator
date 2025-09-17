@@ -2,7 +2,21 @@
 
 This is a simple tax calculator built on react
 
-My plan and thought process
+### Running the app
+Install its dependencies:
+
+`npm install`
+
+Then to run the app:
+
+`npm run dev`
+
+To run the tests:
+
+`npm run test`
+
+
+### My plan and thought process
 - Create a script that calculates your tax based on income brackets
   - make income brackets and percentages easily editable if need to be
   - format dollar amount correctly
