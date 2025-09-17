@@ -9,6 +9,12 @@ p {
   font-size: larger;
 }
 
+input {
+  font-size: medium;
+  width: 70%;
+  padding: 10px;
+}
+
 .card {
   padding: 2em;
 }

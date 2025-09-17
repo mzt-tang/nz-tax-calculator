@@ -2,8 +2,16 @@
 
 This is a simple tax calculator built on vite + react
 
-### Running the app
-In the nz-tax-calculator directory, install its dependencies:
+### Running the app (assuming you have node + npm installed)
+Clone the repo:
+
+`git clone https://github.com/mzt-tang/nz-tax-calculator.git`
+
+CD into the directory:
+
+`cd nz-tax-calculator`
+
+Install its dependencies:
 
 `npm install`
 
