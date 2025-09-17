@@ -1,9 +1,9 @@
 # NZ Tax Calculator
 
-This is a simple tax calculator built on react
+This is a simple tax calculator built on vite + react
 
 ### Running the app
-Install its dependencies:
+In the nz-tax-calculator directory, install its dependencies:
 
 `npm install`
 

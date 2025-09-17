@@ -22,7 +22,7 @@ export default function calculateTax(income) {
     taxToPay += maxTaxBracketAmounttoPay;
     break;      
   }
-  return taxToPay;
+  return Math.round(taxToPay * 100) / 100;
 }
 
 export function incomeAfterTax(income, tax) {
