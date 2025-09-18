@@ -7,6 +7,7 @@ I whipped up a quick host of the app on Vercel:
 https://nz-tax-calculator-ashen.vercel.app/
 
 ### Running the app (assuming you have node + npm installed)
+
 Clone the repo:
 
 `git clone https://github.com/mzt-tang/nz-tax-calculator.git`
@@ -31,8 +32,8 @@ To run the tests:
 
 `npm run test`
 
-
 ### My plan and thought process
+
 - Create a script that calculates your tax based on income brackets
   - make income brackets and percentages easily editable if need to be
   - format dollar amount correctly
